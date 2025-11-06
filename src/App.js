@@ -7,6 +7,7 @@ import Shuffle from "./Shuffle";
 import ShinyText from './ShinyText';
 import TextPressure from './TextPressure';
 import CurvedLoop from './CurvedLoop';
+import FuzzyText from './FuzzyText';
 
 function App() {
   const handleAnimationComplete = () => {
@@ -122,6 +123,18 @@ function App() {
           curveAmount={300}
           interactive={false}
         /> */}
+      </div>
+
+      <div>
+        <FuzzyText 
+          baseIntensity={0.2} 
+          // hoverIntensity={hoverIntensity} 
+          hoverIntensity={0.5} 
+          // enableHover={enableHover}
+          enableHover={true}
+        >
+          404
+        </FuzzyText>
       </div>
 
     </div>
