@@ -8,6 +8,7 @@ import ShinyText from './ShinyText';
 import TextPressure from './TextPressure';
 import CurvedLoop from './CurvedLoop';
 import FuzzyText from './FuzzyText';
+import GradientText from './GradientText'
 
 function App() {
   const handleAnimationComplete = () => {
@@ -17,6 +18,17 @@ function App() {
   return (
     // <div className="background-gray-900 min-h-screen flex flex-col justify-center items-center space-y-12 p-4">
     <div className="bg-blue-500 min-h-screen">
+
+      <div>
+        <GradientText
+          colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+          animationSpeed={3}
+          showBorder={false}
+          className="custom-class"
+        >
+          Add a splash of color!
+        </GradientText>
+      </div>
 
       <CircularText
         text="CIRCULAR*TEXT*COMPONENT*"
@@ -136,6 +148,8 @@ function App() {
           404
         </FuzzyText>
       </div>
+
+
 
     </div>
   );
