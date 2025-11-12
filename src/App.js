@@ -9,6 +9,8 @@ import TextPressure from './TextPressure';
 import CurvedLoop from './CurvedLoop';
 import FuzzyText from './FuzzyText';
 import GradientText from './GradientText'
+import FallingText from './FallingText';
+  
 
 function App() {
   const handleAnimationComplete = () => {
@@ -28,6 +30,20 @@ function App() {
         >
           Add a splash of color!
         </GradientText>
+      </div>
+
+      <div>
+        <FallingText
+          text={`React Bits is a library of animated and interactive React components designed to streamline UI development and simplify your workflow.`}
+          highlightWords={["React", "Bits", "animated", "components", "simplify"]}
+          highlightClass="highlighted"
+          trigger="hover"
+          backgroundColor="transparent"
+          wireframes={false}
+          gravity={0.56}
+          fontSize="2rem"
+          mouseConstraintStiffness={0.9}
+        />
       </div>
 
       <CircularText
